@@ -125,7 +125,9 @@ $app->router->post('/employee/login', [\App\Controllers\EmployeePortalController
 $app->router->get('/employee/logout', [\App\Controllers\EmployeePortalController::class, 'logout']);
 $app->router->get('/employee/dashboard', [\App\Controllers\EmployeePortalController::class, 'dashboard']);
 $app->router->get('/employee/clock-in', [\App\Controllers\EmployeePortalController::class, 'clockIn']);
+$app->router->post('/employee/clock-in', [\App\Controllers\EmployeePortalController::class, 'clockIn']);
 $app->router->get('/employee/clock-out', [\App\Controllers\EmployeePortalController::class, 'clockOut']);
+$app->router->post('/employee/clock-out', [\App\Controllers\EmployeePortalController::class, 'clockOut']);
 $app->router->get('/employee/roster', [\App\Controllers\EmployeePortalController::class, 'roster']);
 $app->router->get('/employee/shifts/claim/{id}', [\App\Controllers\EmployeePortalController::class, 'claimShift']);
 $app->router->get('/employee/messages', [\App\Controllers\EmployeePortalController::class, 'messages']);
