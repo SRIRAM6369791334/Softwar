@@ -1,0 +1,85 @@
+[06-Feb-2026 12:31:02 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in E:\New folder (3)\views\pages\central\dashboard.php on line 19
+[06-Feb-2026 12:31:02 Europe/Berlin] [CRITICAL] Division by zero in E:\New folder (3)\views\pages\central\dashboard.php:56
+[06-Feb-2026 12:40:13 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in E:\New folder (3)\views\pages\central\dashboard.php on line 19
+[06-Feb-2026 12:40:13 Europe/Berlin] [CRITICAL] Division by zero in E:\New folder (3)\views\pages\central\dashboard.php:56
+[06-Feb-2026 12:43:52 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in E:\New folder (3)\views\pages\central\dashboard.php on line 19
+[06-Feb-2026 12:43:52 Europe/Berlin] [CRITICAL] Division by zero in E:\New folder (3)\views\pages\central\dashboard.php:56
+[06-Feb-2026 12:58:18 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in E:\New folder (3)\views\pages\central\dashboard.php on line 19
+[06-Feb-2026 12:58:18 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:58:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:58:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 64
+[06-Feb-2026 12:58:52 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:58:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:58:52 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 64
+[06-Feb-2026 12:58:55 Europe/Berlin] [CRITICAL] SQLSTATE[42S22]: Column not found: 1247 Reference 'current_stock' not supported (reference to group function) in E:\New folder (3)\app\Core\Database.php:70
+[06-Feb-2026 12:59:27 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:59:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:59:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 64
+[06-Feb-2026 12:59:28 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:59:28 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:59:28 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 64
+[06-Feb-2026 12:59:30 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in E:\New folder (3)\views\pages\central\dashboard.php on line 19
+[06-Feb-2026 12:59:30 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:59:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:59:30 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 64
+[06-Feb-2026 12:59:33 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:59:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:59:33 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 64
+[06-Feb-2026 12:59:35 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in E:\New folder (3)\views\pages\central\dashboard.php on line 19
+[06-Feb-2026 12:59:35 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:59:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:59:35 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 64
+[06-Feb-2026 12:59:38 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in E:\New folder (3)\views\pages\central\dashboard.php on line 19
+[06-Feb-2026 12:59:38 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:59:38 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:59:38 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 64
+[06-Feb-2026 12:59:40 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:59:43 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:59:43 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 12:59:43 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 64
+[06-Feb-2026 12:59:45 Europe/Berlin] [CRITICAL] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '\
+            SELECT \
+                u.full_name,\
+                u.use...' at line 1 in E:\New folder (3)\app\Core\Database.php:70
+[06-Feb-2026 13:00:00 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 13:00:01 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 13:00:03 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 13:00:32 Europe/Berlin] [CRITICAL] SQLSTATE[42S22]: Column not found: 1247 Reference 'current_stock' not supported (reference to group function) in E:\New folder (3)\app\Core\Database.php:70
+[06-Feb-2026 13:00:37 Europe/Berlin] [CRITICAL] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '\
+            SELECT \
+                u.full_name,\
+                u.use...' at line 1 in E:\New folder (3)\app\Core\Database.php:70
+[06-Feb-2026 13:01:38 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 13:01:52 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 13:02:21 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 13:02:21 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 13:02:27 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 13:02:27 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 13:02:30 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 13:02:32 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 13:02:33 Europe/Berlin] PHP Warning:  Undefined array key "full_name" in E:\New folder (3)\views\pages\reports\dashboard.php on line 48
+[06-Feb-2026 13:02:33 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 230
+[06-Feb-2026 13:18:33 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/layouts/vendor_auth.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 19
+[06-Feb-2026 13:18:33 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/layouts/vendor_auth.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:19
+[06-Feb-2026 13:18:33 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/layouts/vendor_auth.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 19
+[06-Feb-2026 13:18:33 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/layouts/vendor_auth.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:19
+[06-Feb-2026 13:18:58 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/layouts/vendor_auth.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 19
+[06-Feb-2026 13:18:58 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/layouts/vendor_auth.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:19
+[06-Feb-2026 13:18:59 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/layouts/vendor_auth.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 19
+[06-Feb-2026 13:18:59 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/layouts/vendor_auth.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:19
+[06-Feb-2026 13:48:46 Europe/Berlin] PHP Warning:  Undefined array key "full_name" in E:\New folder (3)\views\pages\reports\dashboard.php on line 48
+[06-Feb-2026 13:48:46 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 236
+[06-Feb-2026 13:48:52 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 236
+[06-Feb-2026 13:48:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 236
+[06-Feb-2026 13:48:52 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[06-Feb-2026 13:48:55 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 236
+[06-Feb-2026 13:48:55 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 236
+[06-Feb-2026 13:48:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[06-Feb-2026 14:20:29 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[06-Feb-2026 14:20:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[06-Feb-2026 14:20:29 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[06-Feb-2026 14:20:32 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[06-Feb-2026 14:20:33 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[06-Feb-2026 14:20:35 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[06-Feb-2026 14:20:40 Europe/Berlin] [CRITICAL] call_user_func(): Argument #1 ($callback) must be a valid callback, class App\Controllers\ReportsController does not have a method "gstDashboard" in E:\New folder (3)\app\Core\Router.php:65
+[06-Feb-2026 14:21:03 Europe/Berlin] [CRITICAL] call_user_func(): Argument #1 ($callback) must be a valid callback, class App\Controllers\ReportsController does not have a method "gstDashboard" in E:\New folder (3)\app\Core\Router.php:65

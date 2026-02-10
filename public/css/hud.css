@@ -1,0 +1,221 @@
+/* Phase 18.1: Enhanced HUD Styles with Theming */
+:root {
+    /* Default (Jarvis Blue) Theme */
+    --hud-neon-blue: #00f3ff;
+    --hud-neon-green: #3fb950;
+    --hud-neon-red: #f85149;
+    --hud-neon-orange: #e3b341;
+    --hud-glass: rgba(22, 27, 34, 0.7);
+    --hud-border: rgba(48, 54, 61, 0.8);
+    --bg-color: #0d1117;
+    --text-color: #e6edf3;
+    --text-dim: #8b949e;
+}
+
+[data-theme="stealth"] {
+    /* Stealth (Military Green) Theme */
+    --hud-neon-blue: #3fb950;
+    /* Green as primary */
+    --hud-neon-green: #2ea043;
+    --hud-neon-red: #da3633;
+    --hud-neon-orange: #d29922;
+    --hud-glass: rgba(13, 17, 23, 0.85);
+    /* Darker glass */
+    --hud-border: rgba(63, 185, 80, 0.4);
+    /* Green tint border */
+    --bg-color: #010409;
+    --text-color: #f0f6fc;
+    --accent-color: #3fb950;
+    --accent-dim: rgba(63, 185, 80, 0.1);
+}
+
+/* Global Transitions */
+body,
+.hud-card,
+.btn,
+.sidebar,
+.top-bar {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.hud-container {
+    padding: 2rem;
+    background: radial-gradient(circle at top right, rgba(0, 243, 255, 0.05), transparent);
+}
+
+.hud-card {
+    background: var(--hud-glass);
+    border: 1px solid var(--hud-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hud-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--hud-neon-blue), transparent);
+    animation: scanline 4s linear infinite;
+    opacity: 0.3;
+}
+
+@keyframes scanline {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+/* Gauge Styles */
+.gauge {
+    width: 150px;
+    height: 150px;
+}
+
+.gauge .bg {
+    fill: none;
+    stroke: var(--border-color);
+    stroke-width: 10;
+}
+
+.gauge .meter {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+/* Heatmap Styles */
+.heatmap-cell {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    margin: 2px;
+    display: inline-block;
+}
+
+.heatmap-0 {
+    background: #161b22;
+}
+
+.heatmap-1 {
+    background: #0e4429;
+}
+
+.heatmap-2 {
+    background: #006d32;
+}
+
+.heatmap-3 {
+    background: #26a641;
+}
+
+.heatmap-4 {
+    background: #39d353;
+}
+
+.badge-hud {
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid currentColor;
+}
+
+/* Phase 18.2: Animated Loading States */
+
+/* Global Loader Bar */
+#global-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: var(--hud-neon-blue);
+    z-index: 9999;
+    transition: width 0.4s ease, opacity 0.4s ease;
+    box-shadow: 0 0 10px var(--hud-neon-blue);
+}
+
+[data-theme="stealth"] #global-loader {
+    background: var(--hud-neon-green);
+    box-shadow: 0 0 10px var(--hud-neon-green);
+}
+
+/* Skeleton Loading Animation */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.skeleton {
+    animation: shimmer 2s infinite linear;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.05) 4%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.05) 36%);
+    background-size: 1000px 100%;
+    border-radius: 4px;
+    color: transparent !important;
+    min-height: 1rem;
+}
+
+[data-theme="stealth"] .skeleton {
+    background: linear-gradient(to right, rgba(63, 185, 80, 0.05) 4%, rgba(63, 185, 80, 0.1) 25%, rgba(63, 185, 80, 0.05) 36%);
+}
+
+.skeleton-text {
+    width: 70%;
+    height: 1em;
+    margin-bottom: 0.5rem;
+}
+
+.skeleton-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Phase 18.3: Drag-and-Drop Widgets */
+.draggable-widget {
+    cursor: grab;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+    user-select: none;
+}
+
+.draggable-widget:active {
+    cursor: grabbing;
+}
+
+.draggable-widget.dragging {
+    opacity: 0.5;
+    transform: scale(0.95);
+    box-shadow: 0 0 0 2px var(--hud-neon-blue);
+    z-index: 100;
+}
+
+[data-theme="stealth"] .draggable-widget.dragging {
+    box-shadow: 0 0 0 2px var(--hud-neon-green);
+}
+
+.draggable-widget.drag-over {
+    border: 2px dashed var(--hud-neon-blue);
+    transform: scale(1.02);
+}
+
+[data-theme="stealth"] .draggable-widget.drag-over {
+    border: 2px dashed var(--hud-neon-green);
+}

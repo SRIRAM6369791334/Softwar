@@ -1,0 +1,196 @@
+/* 3D Map Container */
+.map-viewport {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    background: radial-gradient(circle at center, #1a202c 0%, #0d1117 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    perspective: 1000px;
+}
+
+.map-controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.control-btn {
+    background: rgba(22, 27, 34, 0.9);
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+    transition: 0.2s;
+}
+
+.control-btn:hover {
+    background: var(--accent-color);
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* The Isometric Plane */
+.iso-plane {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 800px;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) rotateX(60deg) rotateZ(-45deg);
+    transition: transform 0.5s ease;
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0 0 50px rgba(0, 243, 255, 0.05);
+}
+
+/* Grid System */
+.map-grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    /* grid-template-columns set via inline style based on DB */
+    gap: 2px;
+}
+
+.grid-cell {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    transition: 0.2s;
+    transform-style: preserve-3d;
+}
+
+.grid-cell:hover {
+    background: rgba(0, 243, 255, 0.1);
+    box-shadow: inset 0 0 10px rgba(0, 243, 255, 0.2);
+}
+
+.grid-cell.highlight {
+    background: rgba(0, 243, 255, 0.3) !important;
+    box-shadow: 0 0 20px var(--accent-color), inset 0 0 20px var(--accent-color);
+    animation: pulse 1s infinite;
+}
+
+/* 3D Product Block */
+.map-product {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background: var(--accent-dim);
+    border: 1px solid var(--accent-color);
+    transform: translateZ(20px);
+    /* Lift it off the ground */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    color: #fff;
+    text-align: center;
+    pointer-events: auto;
+    transition: 0.2s;
+}
+
+.map-product:hover {
+    transform: translateZ(30px) scale(1.1);
+    background: var(--accent-color);
+    color: #000;
+    z-index: 100;
+}
+
+.map-product.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+}
+
+/* Sidebar for Unmapped Items */
+.map-sidebar {
+    width: 300px;
+    border-left: 1px solid var(--border-color);
+    background: var(--panel-bg);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.sidebar-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+.draggable-item {
+    background: #1c2128;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: grab;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.draggable-item:hover {
+    border-color: var(--accent-color);
+}
+
+/* Tooltips */
+.cell-tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 1000;
+    transform: rotateX(-60deg) rotateY(0deg) rotateZ(45deg) translateY(-50px);
+    /* Counter-rotate to face user */
+    display: none;
+    border: 1px solid var(--accent-color);
+}
+
+.grid-cell:hover .cell-tooltip {
+    display: block;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

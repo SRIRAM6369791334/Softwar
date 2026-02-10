@@ -1,0 +1,715 @@
+[07-Feb-2026 05:50:00 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:50:00 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:50:00 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 05:50:03 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:50:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:50:03 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 05:51:53 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:51:53 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:51:53 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 05:52:02 Europe/Berlin] [CRITICAL] Division by zero in E:\New folder (3)\views\pages\admin\vendor\analytics.php:54
+[07-Feb-2026 05:52:11 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:52:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:52:11 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 05:52:15 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:52:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:52:15 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 05:52:18 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:52:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:52:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 05:52:20 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:52:20 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:52:20 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 05:52:24 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in E:\New folder (3)\views\pages\central\dashboard.php on line 19
+[07-Feb-2026 05:52:24 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:52:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:52:24 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 05:52:27 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:52:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:52:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 05:58:24 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:58:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 05:58:24 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:02:12 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:02:12 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:02:12 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:02:26 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:02:26 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:02:26 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:02:29 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:02:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:02:29 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:02:45 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:02:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:02:45 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:04:13 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:04:13 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:04:13 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:04:22 Europe/Berlin] [CRITICAL] Division by zero in E:\New folder (3)\views\pages\admin\vendor\analytics.php:54
+[07-Feb-2026 06:04:51 Europe/Berlin] [CRITICAL] Division by zero in E:\New folder (3)\views\pages\admin\vendor\analytics.php:54
+[07-Feb-2026 06:04:54 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:04:54 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:04:54 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:04:57 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:04:57 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:04:57 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:05:00 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:05:00 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:05:00 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:05:02 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in E:\New folder (3)\views\pages\central\dashboard.php on line 19
+[07-Feb-2026 06:05:02 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:05:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:05:02 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:05:04 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:05:04 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:05:04 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:08:43 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:08:43 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:08:43 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:08:47 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:08:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:08:47 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:08:55 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:08:55 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:08:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:08:57 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:08:57 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:08:57 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:08:57 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:09:00 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:09:00 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:09:00 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:09:12 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:09:12 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:09:12 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:09:14 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in E:\New folder (3)\views\pages\central\dashboard.php on line 19
+[07-Feb-2026 06:09:14 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:09:14 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:09:14 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:09:15 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:09:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:09:15 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:09:17 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:09:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:09:17 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:09:18 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:09:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:09:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:10:04 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:10:04 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:10:04 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:14:39 Europe/Berlin] PHP Warning:  Undefined array key "full_name" in E:\New folder (3)\views\pages\reports\dashboard.php on line 48
+[07-Feb-2026 06:14:39 Europe/Berlin] PHP Warning:  Undefined array key "role_id" in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:14:53 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:14:53 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:14:53 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:15:06 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:15:06 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:15:06 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:15:10 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:15:10 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:15:10 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:15:13 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:15:13 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:15:13 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:15:15 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:15:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:15:15 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:15:18 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:15:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:15:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:15:26 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in E:\New folder (3)\views\pages\products\settings.php on line 27
+[07-Feb-2026 06:15:47 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:15:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:15:47 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:17:58 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:17:58 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:17:58 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:20:21 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:20:21 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:20:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:20:23 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:20:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:20:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:21:30 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:30 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:21:36 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:36 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:21:41 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:41 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:41 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:21:44 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:44 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:44 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:21:45 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:45 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:21:49 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:49 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:21:51 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:51 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:21:53 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:53 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:53 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:21:57 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:57 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:21:57 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:23:02 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:23:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:23:02 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:23:04 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:23:04 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:23:04 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:23:07 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:23:07 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 06:23:07 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 06:41:24 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 06:41:24 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 06:44:30 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 06:44:30 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 07:03:02 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 07:03:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 07:03:02 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 07:03:02 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 07:03:02 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 07:03:05 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 07:03:05 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 239
+[07-Feb-2026 07:03:05 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 07:03:05 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 07:03:05 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 95
+[07-Feb-2026 07:05:13 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 07:05:13 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 07:20:52 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 07:20:52 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 07:20:52 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\verify_biometric.php on line 5
+[07-Feb-2026 07:20:52 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 83
+[07-Feb-2026 07:20:52 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\New folder (3)\app\Core\Auth.php on line 85
+[07-Feb-2026 07:20:52 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 10
+[07-Feb-2026 07:20:52 Europe/Berlin] PHP Warning:  session_regenerate_id(): Session ID cannot be regenerated when there is no active session in E:\New folder (3)\app\Core\Auth.php on line 13
+[07-Feb-2026 07:22:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:22:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:22:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:22:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:22:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:22:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:22:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:22:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:22:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:22:55 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 267
+[07-Feb-2026 07:22:55 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 267
+[07-Feb-2026 07:22:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 07:22:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 07:22:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 07:23:12 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 07:23:12 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 07:44:34 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/pages/admin/employee/roster.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 14
+[07-Feb-2026 07:44:34 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/pages/admin/employee/roster.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:14
+[07-Feb-2026 07:44:42 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/pages/admin/employee/leaves.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 14
+[07-Feb-2026 07:44:42 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/pages/admin/employee/leaves.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:14
+[07-Feb-2026 07:45:21 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/pages/admin/employee/messages.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 14
+[07-Feb-2026 07:45:21 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/pages/admin/employee/messages.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:14
+[07-Feb-2026 07:45:26 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/pages/admin/employee/leaves.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 14
+[07-Feb-2026 07:45:26 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/pages/admin/employee/leaves.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:14
+[07-Feb-2026 07:53:54 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/pages/admin/employee/roster.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 14
+[07-Feb-2026 07:53:54 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/pages/admin/employee/roster.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:14
+[07-Feb-2026 07:53:59 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/pages/admin/employee/roster.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 14
+[07-Feb-2026 07:53:59 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/pages/admin/employee/roster.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:14
+[07-Feb-2026 07:54:18 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/pages/admin/employee/leaves.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 14
+[07-Feb-2026 07:54:18 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/pages/admin/employee/leaves.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:14
+[07-Feb-2026 07:54:25 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/pages/admin/employee/timesheets.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 14
+[07-Feb-2026 07:54:25 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/pages/admin/employee/timesheets.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:14
+[07-Feb-2026 07:54:32 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/pages/admin/employee/messages.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 14
+[07-Feb-2026 07:54:32 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/pages/admin/employee/messages.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:14
+[07-Feb-2026 07:55:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:27 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 07:55:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 07:55:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 07:55:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 07:55:43 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:43 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:43 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:43 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:43 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:43 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:43 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:43 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:43 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:43 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 07:55:43 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 07:55:43 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 07:55:43 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 07:55:56 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:56 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:56 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:56 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:56 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:56 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:56 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:56 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:56 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:55:56 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 07:55:56 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 07:55:56 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 07:55:56 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 07:56:06 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:06 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:06 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:06 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:06 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:06 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:06 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:06 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:06 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:06 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 07:56:06 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 07:56:06 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 07:56:06 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 07:56:34 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:34 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:34 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:34 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:34 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:34 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:34 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:34 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:34 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 07:56:34 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 07:56:34 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 07:56:34 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 07:56:34 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 07:56:39 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/pages/admin/employee/messages.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 14
+[07-Feb-2026 07:56:39 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/pages/admin/employee/messages.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:14
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:00:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:00:13 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:13 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:13 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:13 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:13 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:13 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:13 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:13 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:13 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:13 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:00:13 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:00:13 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:00:13 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:00:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:27 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:00:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:00:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:00:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:00:33 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:33 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:33 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:33 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:33 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:33 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:33 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:33 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:33 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:33 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:00:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:00:33 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:00:33 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:00:36 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:36 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:36 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:36 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:36 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:36 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:36 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:36 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:36 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:00:36 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:00:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:00:36 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:00:36 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:02:14 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/pages/employee/dashboard.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 14
+[07-Feb-2026 08:02:14 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/pages/employee/dashboard.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:14
+[07-Feb-2026 08:02:32 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/pages/employee/dashboard.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 14
+[07-Feb-2026 08:02:32 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/pages/employee/dashboard.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:14
+[07-Feb-2026 08:02:35 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/pages/employee/dashboard.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 14
+[07-Feb-2026 08:02:35 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/pages/employee/dashboard.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:14
+[07-Feb-2026 08:02:54 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/pages/employee/dashboard.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 14
+[07-Feb-2026 08:02:54 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/pages/employee/dashboard.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:14
+[07-Feb-2026 08:02:57 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/pages/employee/dashboard.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 14
+[07-Feb-2026 08:02:57 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/pages/employee/dashboard.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:14
+[07-Feb-2026 08:04:11 Europe/Berlin] PHP Warning:  require(E:\New folder (3)/views/pages/employee/dashboard.php): Failed to open stream: No such file or directory in E:\New folder (3)\app\Core\Controller.php on line 14
+[07-Feb-2026 08:04:11 Europe/Berlin] [CRITICAL] Failed opening required 'E:\New folder (3)/views/pages/employee/dashboard.php' (include_path='C:/xampp/php/PEAR') in E:\New folder (3)\app\Core\Controller.php:14
+[07-Feb-2026 08:05:08 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 110
+[07-Feb-2026 08:05:08 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 114
+[07-Feb-2026 08:05:08 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 118
+[07-Feb-2026 08:05:08 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 122
+[07-Feb-2026 08:05:10 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 110
+[07-Feb-2026 08:05:10 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 114
+[07-Feb-2026 08:05:10 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 118
+[07-Feb-2026 08:05:10 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 122
+[07-Feb-2026 08:05:12 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 110
+[07-Feb-2026 08:05:12 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 114
+[07-Feb-2026 08:05:12 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 118
+[07-Feb-2026 08:05:12 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 122
+[07-Feb-2026 08:05:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:18 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:05:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:05:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:05:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:23 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:05:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:05:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:55 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:05:55 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:05:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:05:55 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:05:59 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:59 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:59 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:59 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:59 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:59 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:59 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:59 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:59 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 08:05:59 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:05:59 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 274
+[07-Feb-2026 08:05:59 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 08:05:59 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:02:45 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:45 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:45 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:45 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:45 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:45 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:45 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:45 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:45 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:45 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:02:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:02:45 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:02:45 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:02:50 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:50 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:50 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:50 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:50 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:50 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:50 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:50 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:50 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:50 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:02:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:02:50 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:02:50 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:02:54 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:54 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:54 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:54 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:54 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:54 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:54 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:54 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:54 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:54 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:02:54 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:02:54 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:02:54 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:02:57 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:57 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:57 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:57 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:57 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:57 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:57 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:57 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:57 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:02:57 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:02:57 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:02:57 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:02:57 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:03:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:01 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:03:01 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:03:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:03:01 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:03:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:18 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:03:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:03:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:03:18 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:03:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:21 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:03:21 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:03:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:03:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:03:24 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:24 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:24 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:24 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:24 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:24 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:24 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:24 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:24 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:24 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:03:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:03:24 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:03:24 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:03:25 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:25 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:25 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:25 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:25 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:25 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:25 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:25 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:25 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:25 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:03:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:03:25 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:03:25 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:03:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:03:27 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:03:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:03:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:03:27 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:04:28 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 110
+[07-Feb-2026 09:04:28 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 114
+[07-Feb-2026 09:04:28 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 118
+[07-Feb-2026 09:04:28 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 122
+[07-Feb-2026 09:04:36 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 110
+[07-Feb-2026 09:04:36 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 114
+[07-Feb-2026 09:04:36 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 118
+[07-Feb-2026 09:04:36 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 122
+[07-Feb-2026 09:05:03 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 110
+[07-Feb-2026 09:05:03 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 114
+[07-Feb-2026 09:05:03 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 118
+[07-Feb-2026 09:05:03 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 122
+[07-Feb-2026 09:05:12 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 110
+[07-Feb-2026 09:05:12 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 114
+[07-Feb-2026 09:05:12 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 118
+[07-Feb-2026 09:05:12 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 122
+[07-Feb-2026 09:05:16 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 110
+[07-Feb-2026 09:05:16 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 114
+[07-Feb-2026 09:05:16 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 118
+[07-Feb-2026 09:05:16 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 122
+[07-Feb-2026 09:05:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:21 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:05:21 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:05:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:05:21 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 09:05:23 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:05:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\New folder (3)\views\layouts\dashboard.php on line 283
+[07-Feb-2026 09:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:05:23 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 118
+[07-Feb-2026 09:05:25 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 110
+[07-Feb-2026 09:05:25 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 114
+[07-Feb-2026 09:05:25 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 118
+[07-Feb-2026 09:05:25 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 122
+[07-Feb-2026 09:05:27 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 110
+[07-Feb-2026 09:05:27 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 114
+[07-Feb-2026 09:05:27 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 118
+[07-Feb-2026 09:05:27 Europe/Berlin] PHP Warning:  Undefined variable $active_tab in E:\New folder (3)\views\layouts\employee_portal.php on line 122
+[07-Feb-2026 10:52:51 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 10:52:51 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 10:52:51 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\verify_biometric.php on line 5
+[07-Feb-2026 10:52:51 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 83
+[07-Feb-2026 10:52:51 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\New folder (3)\app\Core\Auth.php on line 85
+[07-Feb-2026 10:52:51 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 10
+[07-Feb-2026 10:52:51 Europe/Berlin] PHP Warning:  session_regenerate_id(): Session ID cannot be regenerated when there is no active session in E:\New folder (3)\app\Core\Auth.php on line 13
+[07-Feb-2026 10:53:28 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 10:53:28 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 10:53:28 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\verify_biometric.php on line 5
+[07-Feb-2026 10:53:28 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 83
+[07-Feb-2026 10:53:28 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\New folder (3)\app\Core\Auth.php on line 85
+[07-Feb-2026 10:53:28 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 10
+[07-Feb-2026 10:53:28 Europe/Berlin] PHP Warning:  session_regenerate_id(): Session ID cannot be regenerated when there is no active session in E:\New folder (3)\app\Core\Auth.php on line 13
+[07-Feb-2026 10:53:28 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 10:53:28 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 10:53:28 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\verify_pos.php on line 8
+[07-Feb-2026 10:53:28 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 10:53:28 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 10:53:28 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\verify_inventory.php on line 8
+[07-Feb-2026 10:53:28 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 99
+[07-Feb-2026 10:53:28 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 10:53:28 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 10:53:28 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 10:54:58 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 10:54:58 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 10:54:58 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\verify_biometric.php on line 5
+[07-Feb-2026 10:54:58 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 83
+[07-Feb-2026 10:54:58 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\New folder (3)\app\Core\Auth.php on line 85
+[07-Feb-2026 10:54:58 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 10
+[07-Feb-2026 10:54:58 Europe/Berlin] PHP Warning:  session_regenerate_id(): Session ID cannot be regenerated when there is no active session in E:\New folder (3)\app\Core\Auth.php on line 13
+[07-Feb-2026 10:54:58 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 10:54:58 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 10:54:58 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\verify_pos.php on line 8
+[07-Feb-2026 10:54:58 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 10:54:58 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 10:54:58 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\verify_inventory.php on line 8
+[07-Feb-2026 10:54:58 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 99
+[07-Feb-2026 10:54:58 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 10:54:58 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 10:54:58 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:19 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:19 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:19 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\verify_biometric.php on line 5
+[07-Feb-2026 11:22:19 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 83
+[07-Feb-2026 11:22:19 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\New folder (3)\app\Core\Auth.php on line 85
+[07-Feb-2026 11:22:19 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 10
+[07-Feb-2026 11:22:19 Europe/Berlin] PHP Warning:  session_regenerate_id(): Session ID cannot be regenerated when there is no active session in E:\New folder (3)\app\Core\Auth.php on line 13
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\verify_pos.php on line 8
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\verify_inventory.php on line 8
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 99
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\app\Core\Auth.php on line 33
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\verify_employees.php on line 8
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'supermarket_db.employee_attendance' doesn't exist in E:\New folder (3)\app\Core\Database.php:70
+Stack trace:
+#0 E:\New folder (3)\app\Core\Database.php(70): PDO->prepare('INSERT INTO emp...')
+#1 E:\New folder (3)\verify_employees.php(22): App\Core\Database->query('INSERT INTO emp...', Array)
+#2 E:\New folder (3)\verify_employees.php(27): TestEmployeePortal->clockInMock(1)
+#3 {main}
+  thrown in E:\New folder (3)\app\Core\Database.php on line 70
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\verify_admin_mgmt.php on line 7
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\New folder (3)\verify_stock_flow.php on line 7
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'from_branch' in 'field list' in E:\New folder (3)\app\Core\Database.php:70
+Stack trace:
+#0 E:\New folder (3)\app\Core\Database.php(70): PDO->prepare('INSERT INTO sto...')
+#1 E:\New folder (3)\verify_stock_flow.php(27): App\Core\Database->query('INSERT INTO sto...', Array)
+#2 {main}
+  thrown in E:\New folder (3)\app\Core\Database.php on line 70
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:20 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:21 Europe/Berlin] PHP Warning:  Undefined array key "REQUEST_METHOD" in E:\New folder (3)\app\Core\Request.php on line 21
+[07-Feb-2026 11:22:21 Europe/Berlin] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in E:\New folder (3)\app\Core\Request.php on line 21
