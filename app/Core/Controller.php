@@ -43,7 +43,7 @@ class Controller
 
         if (!Auth::hasRole($roles)) {
             http_response_code(403);
-            echo "<h1>403 Unuathorized</h1><p>You do not have permission to access this page.</p>";
+            echo "<h1>403 Unauthorized</h1><p>You do not have permission to access this page.</p>";
             echo "<a href='/dashboard'>Return to Dashboard</a>";
             exit;
         }
