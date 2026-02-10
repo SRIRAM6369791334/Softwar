@@ -100,12 +100,20 @@ class MapController extends Controller
         $engine = \App\Services\Search\SearchService::getEngine();
         $results = $engine->search($q, 'products');
 
-        // Filter out already mapped items (This logic should ideally be in the Engine or Query, but acceptable here for MVP)
-        // We need to check 'product_locations'.
-        $mappedIds = $this->db->query("SELECT product_id FROM product_locations")->fetchAll(\PDO::FETCH_COLUMN);
+        // Filter out already mapped items for the CURRENT branch
+        $mappedIds = $this->db->query("
+            SELECT pl.product_id 
+            FROM product_locations pl
+            JOIN products p ON pl.product_id = p.id
+            WHERE p.branch_id = ?
+        ", [$branchId])->fetchAll(\PDO::FETCH_COLUMN);
         
         $finalResults = [];
         foreach ($results as $item) {
+            // Also ensure the product itself belongs to this branch
+            // Search engine might return all, so we must filter here for MVP
+            if ($item['branch_id'] != $branchId) continue;
+            
             if (!in_array($item['id'], $mappedIds)) {
                 $finalResults[] = $item;
             }

@@ -4,6 +4,15 @@ namespace App\Core;
 
 class Controller
 {
+    use \App\Core\Traits\ApiResponse;
+
+    protected ?Request $request = null;
+
+    public function setRequest(Request $request)
+    {
+        $this->request = $request;
+    }
+
     public function view(string $view, array $params = [], string $layout = 'main')
     {
         // Extract variables to be available in view

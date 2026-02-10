@@ -39,7 +39,7 @@ class SettingsController extends Controller
         return $this->view('admin/settings/index', [
             'groupedSettings' => $groupedSettings,
             'title' => 'System Settings'
-        ]);
+        ], 'dashboard');
     }
 
     public function update()

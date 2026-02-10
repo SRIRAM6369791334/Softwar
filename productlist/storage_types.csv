@@ -1,0 +1,5 @@
+id,name,is_active
+1,DRY,1
+2,CHILLED,1
+3,FROZEN,1
+4,HAZARDOUS,1

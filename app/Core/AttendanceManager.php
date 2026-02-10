@@ -22,19 +22,28 @@ class AttendanceManager
         $date = $now->format('Y-m-d');
         $time = $now->format('H:i:s');
 
-        // Check if already clocked in today
+        // Security: Guard against future-dated entries
+        if ($now > (new \DateTime())->modify('+1 minute')) {
+             throw new \Exception("System clock error or future-dated entry detected.");
+        }
+
+        // Check if already clocked in (any active session, regardless of date, though usually same day)
         $existing = $this->db->query(
-            "SELECT id FROM attendance_logs WHERE user_id = ? AND date = ? AND clock_out IS NULL",
-            [$userId, $date]
+            "SELECT id FROM attendance_logs WHERE user_id = ? AND clock_out IS NULL",
+            [$userId]
         )->fetch();
 
         if ($existing) {
-            return ['success' => false, 'message' => 'Already clocked in'];
+            return ['success' => false, 'message' => 'Active session already exists. Please clock out first.'];
         }
 
         // Get user's grace period settings
         $user = $this->db->query("SELECT grace_period_minutes, max_grace_uses_per_month FROM users WHERE id = ?", [$userId])->fetch();
+        $graceLimit = $user['max_grace_uses_per_month'] ?? 3;
         $gracePeriod = $user['grace_period_minutes'] ?? 15;
+
+        // Check monthly grace usage
+        $currentUsage = $this->getMonthlyGraceUsage($userId);
 
         // Get shift details if provided
         $scheduledTime = null;
@@ -48,15 +57,24 @@ class AttendanceManager
                 $diff = ($now->getTimestamp() - $scheduledTime->getTimestamp()) / 60; // minutes
 
                 if ($diff > 0 && $diff <= $gracePeriod) {
-                    // Within grace period
-                    $graceUsed = 1;
-                    $graceMinutes = (int)$diff;
+                    // Within grace period - CHECK IF CAP EXCEEDED
+                    if ($currentUsage >= $graceLimit) {
+                        // Cap exceeded - mark as late without grace
+                        $graceUsed = 0;
+                        $graceMinutes = (int)$diff;
+                    } else {
+                        $graceUsed = 1;
+                        $graceMinutes = (int)$diff;
 
-                    // Log grace usage
-                    $this->db->query(
-                        "INSERT INTO grace_period_logs (user_id, scheduled_time, actual_time, grace_minutes, date) VALUES (?, ?, ?, ?, ?)",
-                        [$userId, $scheduledTime->format('H:i:s'), $time, $graceMinutes, $date]
-                    );
+                        // Log grace usage
+                        $this->db->query(
+                            "INSERT INTO grace_period_logs (user_id, scheduled_time, actual_time, grace_minutes, date) VALUES (?, ?, ?, ?, ?)",
+                            [$userId, $scheduledTime->format('H:i:s'), $time, $graceMinutes, $date]
+                        );
+                    }
+                } elseif ($diff > $gracePeriod) {
+                    // Beyond grace period
+                    $graceMinutes = (int)$diff;
                 }
             }
         }

@@ -10,9 +10,12 @@ class PosController extends Controller
 {
     private $db;
 
-    public function __construct()
+    private $checkoutService;
+
+    public function __construct(Database $db, \App\Services\CheckoutService $checkoutService)
     {
-        $this->db = Database::getInstance();
+        $this->db = $db;
+        $this->checkoutService = $checkoutService;
     }
 
     public function terminal()
@@ -29,96 +32,69 @@ class PosController extends Controller
             return;
         }
 
-        // Search by Name or SKU (filtered by current branch)
-        // Join with product_batches to get pricing and stock
-        // We take the 'FIFO' (First Expiring) batch that has stock
+        // Search by Name or SKU/Barcode in variants
         $branchId = Auth::getCurrentBranch();
         $sql = "
-            SELECT p.id, p.name, p.sku, p.unit, 
-                   pb.id as batch_id, pb.sale_price, pb.stock_qty, pb.expiry_date,
+            SELECT p.id as product_id, p.name as product_name, 
+                   pv.id as variant_id, pv.variant_name, pv.barcode, pv.sku_code as sku,
+                   pv.selling_price as sale_price, pv.current_stock as stock_qty,
                    tg.percentage as tax_percent
-            FROM products p
-            JOIN product_batches pb ON p.id = pb.product_id
-            JOIN tax_groups tg ON p.tax_group_id = tg.id
-            WHERE (p.name LIKE ? OR p.sku LIKE ?) 
-            AND pb.stock_qty > 0
+            FROM product_variants pv
+            JOIN products p ON pv.product_id = p.id
+            LEFT JOIN tax_groups tg ON pv.tax_slab_id = tg.id
+            WHERE (p.name LIKE ? OR pv.barcode = ? OR pv.sku_code = ?) 
+            AND pv.current_stock > 0
             AND p.branch_id = ?
-            AND pb.branch_id = ?
-            ORDER BY pb.expiry_date ASC
-            LIMIT 10
+            AND p.is_active = 1
+            AND pv.is_active = 1
+            AND p.deleted_at IS NULL
+            ORDER BY p.name ASC
+            LIMIT 20
         ";
 
-        $results = $this->db->query($sql, ["%$query%", "$query%", $branchId, $branchId])->fetchAll();
-        $this->json($results);
+        $results = $this->db->query($sql, ["%$query%", $query, $query, $branchId])->fetchAll();
+        
+        // Map to expected format for POS frontend
+        $formatted = array_map(function($row) {
+            return [
+                'id' => $row['product_id'],
+                'name' => $row['product_name'] . ($row['variant_name'] ? " - " . $row['variant_name'] : ""),
+                'sku' => $row['sku'],
+                'batch_id' => $row['variant_id'], // Map variant_id to batch_id for compat
+                'sale_price' => $row['sale_price'],
+                'stock_qty' => $row['stock_qty'],
+                'tax_percent' => $row['tax_percent']
+            ];
+        }, $results);
+
+        $this->json($formatted);
     }
 
     public function checkout()
     {
-        // Receive JSON payload
-        $input = json_decode(file_get_contents('php://input'), true);
+        // Receive JSON payload via abstraction
+        $input = $this->request ? $this->request->getJson() : json_decode(file_get_contents('php://input'), true);
         
-        if (empty($input['items'])) {
-            $this->json(['status' => 'error', 'message' => 'Cart is empty']);
-            return;
+        if (empty($input['items']) || !is_array($input['items'])) {
+            return $this->errorResponse('Cart is empty or invalid', 400);
         }
 
         try {
-            $pdo = $this->db->getConnection();
-            $pdo->beginTransaction();
-
-            // 1. Create Invoice Header (with branch_id)
-            $invNo = 'INV-' . date('Ymd') . '-' . time();
+            // Use Injected Service
             $userId = $_SESSION['user_id'];
             $branchId = Auth::getCurrentBranch();
+
+            $result = $this->checkoutService->processTransaction($input['items'], $userId, $branchId);
             
-            $stmt = $this->db->query(
-                "INSERT INTO invoices (user_id, invoice_no, sub_total, tax_total, grand_total, payment_mode, branch_id) 
-                 VALUES (?, ?, ?, ?, ?, ?, ?)",
-                [$userId, $invNo, $input['subTotal'], $input['taxTotal'], $input['grandTotal'], 'cash', $branchId]
-            );
-            
-            $invoiceId = $pdo->lastInsertId();
-
-            // 2. Process Items & Deduct Stock
-            foreach ($input['items'] as $item) {
-                // Determine Batch (In real app, front-end selects batch or backend picks FIFO)
-                // Here we rely on the batch_id sent from search
-                
-                // Simple Stock Check
-                $check = $this->db->query("SELECT stock_qty FROM product_batches WHERE id = ?", [$item['batch_id']])->fetch();
-                if ($check['stock_qty'] < $item['qty']) {
-                    throw new \Exception("Insufficient stock for " . $item['name']);
-                }
-
-                // Deduct Stock
-                $this->db->query(
-                    "UPDATE product_batches SET stock_qty = stock_qty - ? WHERE id = ?", 
-                    [$item['qty'], $item['batch_id']]
-                );
-
-                // Add Invoice Item
-                $this->db->query(
-                    "INSERT INTO invoice_items (invoice_id, product_id, batch_id, qty, unit_price, tax_percent, tax_amount, total)
-                     VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-                    [
-                        $invoiceId, 
-                        $item['id'], 
-                        $item['batch_id'], 
-                        $item['qty'], 
-                        $item['sale_price'], // Saved at moment of sale
-                        $item['tax_percent'],
-                        $item['tax_amount'],
-                        $item['line_total']
-                    ]
-                );
-            }
-
-            $pdo->commit();
-            $this->json(['status' => 'success', 'invoice_no' => $invNo]);
+            // Standardize Success Response
+            // CheckoutService returns ['status' => 'success', 'invoice_no' => ...]
+            // We can wrap this data
+            return $this->successResponse($result, 'Transaction successful');
 
         } catch (\Exception $e) {
-            $pdo->rollBack();
-            $this->json(['status' => 'error', 'message' => $e->getMessage()]);
+            // Log is handled by outer handler or we log here
+            error_log("Checkout Service Error: " . $e->getMessage());
+            return $this->errorResponse($e->getMessage(), 500);
         }
     }
 }

@@ -55,6 +55,8 @@ $app->router->post('/products/store', [\App\Controllers\ProductController::class
 $app->router->get('/products/settings/{id}', [\App\Controllers\ProductController::class, 'editSettings']);
 $app->router->post('/products/settings/{id}', [\App\Controllers\ProductController::class, 'updateSettings']);
 $app->router->get('/products/delete/{id}', [\App\Controllers\ProductController::class, 'delete']);
+$app->router->get('/products/import', [\App\Controllers\ProductController::class, 'import']);
+$app->router->post('/products/import', [\App\Controllers\ProductController::class, 'importCsv']);
 
 // --- Inventory Routes ---
 $app->router->get('/inventory', [\App\Controllers\InventoryController::class, 'index']);
@@ -144,8 +146,10 @@ $app->router->get('/admin/employee/timesheets', [\App\Controllers\EmployeeAdminC
 $app->router->get('/admin/employee/messages', [\App\Controllers\EmployeeAdminController::class, 'messages']);
 $app->router->post('/admin/employee/messages', [\App\Controllers\EmployeeAdminController::class, 'messages']);
 
-$app->router->get('/api/notifications/unread', [\App\Controllers\NotificationController::class, 'getUnread']);
-$app->router->post('/api/notifications/read/{id}', [\App\Controllers\NotificationController::class, 'markAsRead']);
+// --- Notification API Routes (Versioned) [#100] ---
+$app->router->get('/api/v1/notifications/unread', [\App\Controllers\NotificationController::class, 'getUnread']);
+$app->router->post('/api/v1/notifications/read/{id}', [\App\Controllers\NotificationController::class, 'markAsRead']);
+
 $app->router->get('/notifications/clear', [\App\Controllers\NotificationController::class, 'markAllRead']);
 $app->router->get('/notifications/summary', [\App\Controllers\NotificationController::class, 'dailySummary']);
 
@@ -174,5 +178,29 @@ $app->router->get('/admin/employee/overtime/report', [\App\Controllers\OvertimeC
 $app->router->get('/admin/employee/open-shifts', [\App\Controllers\OpenShiftsController::class, 'index']);
 $app->router->get('/admin/employee/open-shifts/create', [\App\Controllers\OpenShiftsController::class, 'create']);
 $app->router->post('/admin/employee/open-shifts/store', [\App\Controllers\OpenShiftsController::class, 'store']);
+// --- System Logs & Monitoring Routes [#63] ---
+$app->router->get('/admin/logs', [\App\Controllers\LogController::class, 'index']);
+$app->router->get('/admin/logs/dashboard', [\App\Controllers\LogController::class, 'dashboard']);
+
+// --- Data Tools & Bulk Actions Routes ---
+$app->router->get('/admin/data', [\App\Controllers\BulkActionController::class, 'index']);
+$app->router->post('/admin/data/prices', [\App\Controllers\BulkActionController::class, 'updatePrices']);
+$app->router->post('/admin/data/reset', [\App\Controllers\BulkActionController::class, 'resetInventory']);
+
+// --- Workflow/Automation Routes ---
+$app->router->get('/admin/workflows', [\App\Controllers\WorkflowController::class, 'index']);
+$app->router->get('/admin/workflows/create', [\App\Controllers\WorkflowController::class, 'create']);
+$app->router->post('/admin/workflows/store', [\App\Controllers\WorkflowController::class, 'store']);
+$app->router->get('/admin/workflows/edit/{id}', [\App\Controllers\WorkflowController::class, 'edit']);
+$app->router->post('/admin/workflows/actions/add/{id}', [\App\Controllers\WorkflowController::class, 'addAction']);
+$app->router->get('/admin/workflows/actions/delete/{id}', [\App\Controllers\WorkflowController::class, 'deleteAction']);
+
+// --- Backup Routes ---
+$app->router->get('/admin/backup/download', [\App\Controllers\BackupController::class, 'create']);
+
+// --- Settings Routes ---
+$app->router->get('/admin/settings', [\App\Controllers\SettingsController::class, 'index']);
+$app->router->post('/admin/settings/update', [\App\Controllers\SettingsController::class, 'update']);
+
 $app->router->get('/employee/open-shifts', [\App\Controllers\OpenShiftsController::class, 'browse']);
 $app->router->get('/employee/open-shifts/claim/{id}', [\App\Controllers\OpenShiftsController::class, 'claim']);

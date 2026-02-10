@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S.O.S. - Dashboard</title>
     <link rel="stylesheet" href="/css/hud.css">
+    <link rel="stylesheet" href="/css/dark_mode.css">
+    <link rel="stylesheet" href="/css/print.css" media="print">
     <style>
         :root {
             --bg-color: #0d1117;
@@ -337,22 +339,24 @@
 
 
     <script src="/js/loader.js"></script>
+    <script src="/js/pos_utilities.js"></script>
+    <script src="/js/gdpr.js"></script>
     <script>
-        // Theme Toggle Logic
+        // Theme Toggle Logic [#96]
         function toggleTheme() {
             const html = document.documentElement;
             const current = html.getAttribute('data-theme');
-            const target = current === 'stealth' ? 'light' : 'stealth';
+            const target = current === 'dark' ? 'light' : 'dark';
             html.setAttribute('data-theme', target);
             localStorage.setItem('theme', target);
-            document.getElementById('themeIcon').innerText = target === 'stealth' ? '☀️' : '🌙';
+            document.getElementById('themeIcon').innerText = target === 'dark' ? '☀️' : '🌙';
         }
 
         // Apply saved theme on load
         (function() {
             const saved = localStorage.getItem('theme');
-            if(saved === 'stealth') {
-                document.documentElement.setAttribute('data-theme', 'stealth');
+            if(saved === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
                 document.getElementById('themeIcon').innerText = '☀️';
             }
         })();
@@ -400,7 +404,7 @@
                 `;
 
                 try {
-                    const res = await fetch('/api/notifications/unread');
+                    const res = await fetch('/api/v1/notifications/unread');
                     const data = await res.json();
                     
                     if(data.length === 0) {

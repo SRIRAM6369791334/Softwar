@@ -1,0 +1,40 @@
+@media print {
+
+    /* POS Print Styles [#93] */
+    body {
+        background: white !important;
+        color: black !important;
+    }
+
+    .sidebar,
+    .top-bar,
+    .btn,
+    .no-print {
+        display: none !important;
+    }
+
+    .main-wrapper {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .content-area {
+        background: none !important;
+        padding: 0 !important;
+    }
+
+    .invoice-container {
+        width: 100% !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    table {
+        font-size: 11pt;
+    }
+
+    th {
+        background: #eee !important;
+        color: black !important;
+    }
+}

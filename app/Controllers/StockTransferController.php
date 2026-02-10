@@ -89,55 +89,61 @@ class StockTransferController extends Controller
     {
         $input = $_POST;
         $branchId = Auth::getCurrentBranch();
-        $transferNo = 'TRF-' . time();
+        $transferNo = 'TRF-' . time() . '-' . rand(100, 999);
         $userId = $_SESSION['user_id'];
         $type = $input['type'] ?? 'direct'; // direct or request
 
         try {
-            $pdo = $this->db->getConnection();
-            $pdo->beginTransaction();
+            $this->db->transactional(function($db) use ($input, $branchId, $transferNo, $userId, $type) {
+                if ($type == 'direct') {
+                    // 1. Verify availability with PESSIMISTIC LOCKING
+                    $batch = $db->query(
+                        "SELECT stock_qty FROM product_batches WHERE id = ? FOR UPDATE", 
+                        [$input['batch_id']]
+                    )->fetch();
 
-            if ($type == 'direct') {
-                // 1. Verify availability
-                $batch = $this->db->query("SELECT stock_qty FROM product_batches WHERE id = ?", [$input['batch_id']])->fetch();
-                if (!$batch || $batch['stock_qty'] < $input['qty']) {
-                    throw new \Exception("Insufficient stock in selected batch.");
+                    if (!$batch || $batch['stock_qty'] < $input['qty']) {
+                        throw new \Exception("Insufficient stock in selected batch.");
+                    }
+
+                    // 2. Deduct from source branch batch
+                    $db->query(
+                        "UPDATE product_batches SET stock_qty = stock_qty - ?, version_id = version_id + 1 WHERE id = ?",
+                        [$input['qty'], $input['batch_id']]
+                    );
+
+                    // 3. Record transfer
+                    $db->query("
+                        INSERT INTO stock_transfers (
+                            from_branch_id, to_branch_id, product_id, batch_id, qty, 
+                            status, transfer_no, created_by, remarks
+                        ) VALUES (?, ?, ?, ?, ?, 'pending', ?, ?, ?)
+                    ", [
+                        $branchId, $input['to_branch_id'], $input['product_id'], 
+                        $input['batch_id'], $input['qty'], $transferNo, $userId, $input['remarks']
+                    ]);
+
+                    // 4. AUDIT LOG (Internal Movement)
+                    $db->query(
+                        "INSERT INTO audit_logs (user_id, action, description, branch_id) VALUES (?, ?, ?, ?)",
+                        [$userId, 'STOCK_TRANSFER_INITIATED', "Initiated $type transfer $transferNo: {$input['qty']} units", $branchId]
+                    );
+                } else {
+                    // Request Type
+                    $db->query("
+                        INSERT INTO stock_transfers (
+                            from_branch_id, to_branch_id, product_id, batch_id, qty, 
+                            status, transfer_no, created_by, remarks
+                        ) VALUES (?, ?, ?, ?, ?, 'requested', ?, ?, ?)
+                    ", [
+                        $input['from_branch_id'], $branchId, $input['product_id'], 
+                        0, $input['qty'], $transferNo, $userId, $input['remarks']
+                    ]);
                 }
+            });
 
-                // 2. Deduct from source branch batch
-                $this->db->query(
-                    "UPDATE product_batches SET stock_qty = stock_qty - ? WHERE id = ?",
-                    [$input['qty'], $input['batch_id']]
-                );
-
-                // 3. Record transfer
-                $this->db->query("
-                    INSERT INTO stock_transfers (
-                        from_branch_id, to_branch_id, product_id, batch_id, qty, 
-                        status, transfer_no, created_by, remarks
-                    ) VALUES (?, ?, ?, ?, ?, 'pending', ?, ?, ?)
-                ", [
-                    $branchId, $input['to_branch_id'], $input['product_id'], 
-                    $input['batch_id'], $input['qty'], $transferNo, $userId, $input['remarks']
-                ]);
-            } else {
-                // Request Type: Only product and qty needed, no batch deduction yet
-                $this->db->query("
-                    INSERT INTO stock_transfers (
-                        from_branch_id, to_branch_id, product_id, batch_id, qty, 
-                        status, transfer_no, created_by, remarks
-                    ) VALUES (?, ?, ?, ?, ?, 'requested', ?, ?, ?)
-                ", [
-                    $input['from_branch_id'], $branchId, $input['product_id'], 
-                    0, $input['qty'], $transferNo, $userId, $input['remarks']
-                ]);
-            }
-
-            $pdo->commit();
             $this->redirect('/inventory/transfers?success=Transfer/Request initiated');
-
         } catch (\Exception $e) {
-            if ($pdo->inTransaction()) $pdo->rollBack();
             die("Error: " . $e->getMessage());
         }
     }
@@ -181,27 +187,42 @@ class StockTransferController extends Controller
         $qty = $_POST['qty'];
 
         try {
-            $pdo = $this->db->getConnection();
-            $pdo->beginTransaction();
+            $this->db->transactional(function($db) use ($id, $batchId, $qty, $branchId) {
+                // 1. Double check stock with PESSIMISTIC LOCKING
+                $batch = $db->query(
+                    "SELECT stock_qty FROM product_batches WHERE id = ? FOR UPDATE", 
+                    [$batchId]
+                )->fetch();
 
-            // 1. Double check stock
-            $batch = $this->db->query("SELECT stock_qty FROM product_batches WHERE id = ?", [$batchId])->fetch();
-            if (!$batch || $batch['stock_qty'] < $qty) throw new \Exception("Insufficient stock locally.");
+                if (!$batch || $batch['stock_qty'] < $qty) {
+                    throw new \Exception("Insufficient stock locally.");
+                }
 
-            // 2. Deduct stock
-            $this->db->query("UPDATE product_batches SET stock_qty = stock_qty - ? WHERE id = ?", [$qty, $batchId]);
+                // 2. Deduct stock
+                $db->query(
+                    "UPDATE product_batches SET stock_qty = stock_qty - ?, version_id = version_id + 1 WHERE id = ?", 
+                    [$qty, $batchId]
+                );
 
-            // 3. Update transfer status and link to batch
-            $this->db->query(
-                "UPDATE stock_transfers SET batch_id = ?, status = 'pending', qty = ? WHERE id = ?",
-                [$batchId, $qty, $id]
-            );
+                // 3. Update transfer status and link to batch
+                $db->query(
+                    "UPDATE stock_transfers SET batch_id = ?, status = 'pending', qty = ? WHERE id = ? AND status = 'requested'",
+                    [$batchId, $qty, $id]
+                );
 
-            $pdo->commit();
+                if ($db->query("SELECT ROW_COUNT() as count")->fetch()['count'] == 0) {
+                    throw new \Exception("Request already fulfilled or unavailable.");
+                }
+
+                // 4. AUDIT LOG
+                $db->query(
+                    "INSERT INTO audit_logs (user_id, action, description, branch_id) VALUES (?, ?, ?, ?)",
+                    [$_SESSION['user_id'], 'STOCK_TRANSFER_FULFILLED', "Fulfilled request $id with batch $batchId (Qty: $qty)", $branchId]
+                );
+            });
+
             $this->redirect('/inventory/transfers?success=Request fulfilled and items in transit');
-
         } catch (\Exception $e) {
-            if ($pdo->inTransaction()) $pdo->rollBack();
             die("Error: " . $e->getMessage());
         }
     }
@@ -215,57 +236,60 @@ class StockTransferController extends Controller
         $userId = $_SESSION['user_id'];
 
         try {
-            $pdo = $this->db->getConnection();
-            $pdo->beginTransaction();
+            $this->db->transactional(function($db) use ($id, $branchId, $userId) {
+                // 1. Get transfer details and LOCK the transfer record
+                $transfer = $db->query("
+                    SELECT st.*, pb.batch_no, pb.expiry_date, pb.purchase_price, pb.mrp, pb.sale_price
+                    FROM stock_transfers st
+                    JOIN product_batches pb ON st.batch_id = pb.id
+                    WHERE st.id = ? AND st.to_branch_id = ? AND st.status = 'pending'
+                    FOR UPDATE
+                ", [$id, $branchId])->fetch();
 
-            // 1. Get transfer details
-            $transfer = $this->db->query("
-                SELECT st.*, pb.batch_no, pb.expiry_date, pb.purchase_price, pb.mrp, pb.sale_price
-                FROM stock_transfers st
-                JOIN product_batches pb ON st.batch_id = pb.id
-                WHERE st.id = ? AND st.to_branch_id = ? AND st.status = 'pending'
-            ", [$id, $branchId])->fetch();
+                if (!$transfer) {
+                    throw new \Exception("Transfer not found or already processed.");
+                }
 
-            if (!$transfer) {
-                throw new \Exception("Transfer not found or already processed.");
-            }
+                // 2. Create/Update batch in destination branch with LOCKING
+                $destBatch = $db->query("
+                    SELECT id FROM product_batches 
+                    WHERE product_id = ? AND batch_no = ? AND branch_id = ?
+                    FOR UPDATE
+                ", [$transfer['product_id'], $transfer['batch_no'], $branchId])->fetch();
 
-            // 2. Create/Update batch in destination branch
-            // Check if same batch already exists in destination
-            $destBatch = $this->db->query("
-                SELECT id FROM product_batches 
-                WHERE product_id = ? AND batch_no = ? AND branch_id = ?
-            ", [$transfer['product_id'], $transfer['batch_no'], $branchId])->fetch();
+                if ($destBatch) {
+                    $db->query(
+                        "UPDATE product_batches SET stock_qty = stock_qty + ?, version_id = version_id + 1 WHERE id = ?",
+                        [$transfer['qty'], $destBatch['id']]
+                    );
+                } else {
+                    $db->query("
+                        INSERT INTO product_batches (
+                            product_id, batch_no, expiry_date, purchase_price, 
+                            mrp, sale_price, stock_qty, branch_id, version_id
+                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 1)
+                    ", [
+                        $transfer['product_id'], $transfer['batch_no'], $transfer['expiry_date'],
+                        $transfer['purchase_price'], $transfer['mrp'], $transfer['sale_price'],
+                        $transfer['qty'], $branchId
+                    ]);
+                }
 
-            if ($destBatch) {
-                $this->db->query(
-                    "UPDATE product_batches SET stock_qty = stock_qty + ? WHERE id = ?",
-                    [$transfer['qty'], $destBatch['id']]
+                // 3. Update transfer status
+                $db->query(
+                    "UPDATE stock_transfers SET status = 'completed', received_by = ? WHERE id = ?",
+                    [$userId, $id]
                 );
-            } else {
-                $this->db->query("
-                    INSERT INTO product_batches (
-                        product_id, batch_no, expiry_date, purchase_price, 
-                        mrp, sale_price, stock_qty, branch_id
-                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-                ", [
-                    $transfer['product_id'], $transfer['batch_no'], $transfer['expiry_date'],
-                    $transfer['purchase_price'], $transfer['mrp'], $transfer['sale_price'],
-                    $transfer['qty'], $branchId
-                ]);
-            }
 
-            // 3. Update transfer status
-            $this->db->query(
-                "UPDATE stock_transfers SET status = 'completed', received_by = ? WHERE id = ?",
-                [$userId, $id]
-            );
+                // 4. AUDIT LOG
+                $db->query(
+                    "INSERT INTO audit_logs (user_id, action, description, branch_id) VALUES (?, ?, ?, ?)",
+                    [$userId, 'STOCK_TRANSFER_RECEIVED', "Received transfer $id at branch $branchId", $branchId]
+                );
+            });
 
-            $pdo->commit();
             $this->redirect('/inventory/transfers?success=Transferred items received');
-
         } catch (\Exception $e) {
-            if ($pdo->inTransaction()) $pdo->rollBack();
             die("Error: " . $e->getMessage());
         }
     }

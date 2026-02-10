@@ -28,7 +28,7 @@ class BulkActionController extends Controller
         return $this->view('admin/data/index', [
             'categories' => $categories, 
             'branches' => $branches
-        ]);
+        ], 'dashboard');
     }
 
     public function updatePrices()

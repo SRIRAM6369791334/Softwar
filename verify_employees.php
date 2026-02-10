@@ -43,12 +43,12 @@ echo "SUCCESS: Shift scheduled.\n";
 
 // 3. Test Leave Request
 echo "Testing Leave Request...\n";
-$db->query("INSERT INTO employee_leaves (user_id, start_date, end_date, reason, status) VALUES (?, ?, ?, ?, ?)", 
-    [1, date('Y-m-d', strtotime('+5 days')), date('Y-m-d', strtotime('+6 days')), 'Family Event', 'pending']);
+$db->query("INSERT INTO employee_leaves (user_id, type, start_date, end_date, days, reason, status) VALUES (?, ?, ?, ?, ?, ?, ?)", 
+    [1, 'casual', date('Y-m-d', strtotime('+5 days')), date('Y-m-d', strtotime('+6 days')), 1.0, 'Family Event', 'pending']);
 $leaveId = $db->getConnection()->lastInsertId();
 
 // Approve Leave
-$db->query("UPDATE employee_leaves SET status = 'approved', processed_by = ? WHERE id = ?", [1, $leaveId]);
+$db->query("UPDATE employee_leaves SET status = 'approved', approved_by = ? WHERE id = ?", [1, $leaveId]);
 $check = $db->query("SELECT status FROM employee_leaves WHERE id = ?", [$leaveId])->fetchColumn();
 if ($check === 'approved') {
     echo "SUCCESS: Leave request processed and approved.\n";

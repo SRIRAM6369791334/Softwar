@@ -15,19 +15,27 @@ class ProductController extends Controller
         $this->db = Database::getInstance();
     }
 
+    public function import()
+    {
+        return $this->view('products/import', [], 'dashboard');
+    }
+
     public function index()
     {
-        // List products with their Tax Group Name (filtered by current branch)
+        // List products with their relationships
         $branchId = Auth::getCurrentBranch();
         $sql = "
-            SELECT p.*, tg.name as tax_name, 
-            (SELECT SUM(stock_qty) FROM product_batches WHERE product_id = p.id AND branch_id = ?) as total_stock
+            SELECT p.*, c.name as category_name, b.name as brand_name,
+            (SELECT SUM(current_stock) FROM product_variants WHERE product_id = p.id) as total_stock,
+            (SELECT MIN(selling_price) FROM product_variants WHERE product_id = p.id) as min_price,
+            (SELECT MAX(selling_price) FROM product_variants WHERE product_id = p.id) as max_price
             FROM products p
-            LEFT JOIN tax_groups tg ON p.tax_group_id = tg.id
+            LEFT JOIN categories c ON p.category_id = c.id
+            LEFT JOIN brands b ON p.brand_id = b.id
             WHERE p.branch_id = ? AND p.deleted_at IS NULL
             ORDER BY p.name ASC
         ";
-        $products = $this->db->query($sql, [$branchId, $branchId])->fetchAll();
+        $products = $this->db->query($sql, [$branchId])->fetchAll();
         
         return $this->view('products/index', ['products' => $products], 'dashboard');
     }
@@ -80,6 +88,46 @@ class ProductController extends Controller
 
         $this->redirect('/products');
     }
+    public function edit($id)
+    {
+        $branchId = Auth::getCurrentBranch();
+        $product = $this->db->query("SELECT * FROM products WHERE id = ? AND branch_id = ?", [$id, $branchId])->fetch();
+        
+        if (!$product) die("Product not found");
+
+        $tax_groups = $this->db->query("SELECT * FROM tax_groups")->fetchAll();
+        return $this->view('products/edit', [
+            'product' => $product,
+            'tax_groups' => $tax_groups
+        ], 'dashboard');
+    }
+
+    public function update($id)
+    {
+        $branchId = Auth::getCurrentBranch();
+        $name = $_POST['name'];
+        $sku = $_POST['sku'] ?: null;
+        $hsn = $_POST['hsn_code'];
+        $unit = $_POST['unit'];
+        $tax_id = $_POST['tax_group_id'];
+        $version = (int) $_POST['version_id'];
+
+        // Optimistic Locking Check
+        $updateSql = "
+            UPDATE products 
+            SET name = ?, sku = ?, hsn_code = ?, unit = ?, tax_group_id = ?, version_id = version_id + 1
+            WHERE id = ? AND branch_id = ? AND version_id = ?
+        ";
+        
+        $this->db->query($updateSql, [$name, $sku, $hsn, $unit, $tax_id, $id, $branchId, $version]);
+
+        if ($this->db->query("SELECT ROW_COUNT() as count")->fetch()['count'] == 0) {
+            die("Conflict Error: The product was updated by another user. Please refresh and try again.");
+        }
+
+        $this->redirect('/products?success=Product updated');
+    }
+
     public function editSettings($id)
     {
         $branchId = Auth::getCurrentBranch();
@@ -121,5 +169,34 @@ class ProductController extends Controller
         }
 
         $this->redirect('/products?success=Settings updated');
+    }
+
+    public function importCsv()
+    {
+        $this->requireRole(1); // Admin Only
+        $file = $_FILES['csv_file']['tmp_name'] ?? null;
+        if (!$file) die("No file uploaded");
+
+        $handle = fopen($file, "r");
+        fgetcsv($handle); // Skip header
+        
+        $branchId = Auth::getCurrentBranch();
+        $imported = 0;
+        
+        $this->db->transactional(function($db) use ($handle, $branchId, &$imported) {
+            while (($data = fgetcsv($handle)) !== FALSE) {
+                if (count($data) < 5) continue;
+                // name, sku, hsn, unit, tax_id, alert_qty
+                $db->query(
+                    "INSERT INTO products (name, sku, hsn_code, unit, tax_group_id, min_stock_alert, branch_id) 
+                     VALUES (?, ?, ?, ?, ?, ?, ?)",
+                    [$data[0], $data[1], $data[2], $data[3], $data[4], $data[5] ?? 10, $branchId]
+                );
+                $imported++;
+            }
+        });
+
+        fclose($handle);
+        $this->redirect("/products?success=Imported $imported products successfully");
     }
 }

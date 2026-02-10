@@ -62,6 +62,11 @@ class PurchaseOrderController extends Controller
                 $total += $qtys[$i] * $prices[$i];
             }
 
+            // Phase 8: PO Budget Cap [#58] ($5000)
+            if ($total > 5000 && $_SESSION['role_id'] != 1) {
+                throw new \Exception("Purchase Order exceeds $5000 budget cap. Unauthorized.");
+            }
+
             // 2. Insert PO Header
             $this->db->query("
                 INSERT INTO purchase_orders (vendor_id, branch_id, order_no, total_amount, status, created_by)

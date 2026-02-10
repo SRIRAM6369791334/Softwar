@@ -24,11 +24,17 @@ echo "SUCCESS: PO created.\n";
 echo "Testing Stock Transfers...\n";
 $targetBranch = $db->query("SELECT id FROM branches WHERE id != 1 LIMIT 1")->fetchColumn();
 if ($targetBranch) {
-    $db->query("INSERT INTO stock_transfers (from_branch, to_branch, status, created_by) 
-                VALUES (?, ?, ?, ?)", [1, $targetBranch, 'pending', 1]);
-    echo "SUCCESS: Stock transfer initiated to Branch $targetBranch.\n";
+    $batch = $db->query("SELECT id, product_id FROM product_batches LIMIT 1")->fetch();
+    if ($batch) {
+        $db->query("INSERT INTO stock_transfers (from_branch_id, to_branch_id, product_id, batch_id, qty, transfer_no, status, created_by) 
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)", [1, $targetBranch, $batch['product_id'], $batch['id'], 5, 'TRN-TEST-' . time(), 'pending', 1]);
+        echo "SUCCESS: Stock transfer initiated to Branch $targetBranch.\n";
+    } else {
+        echo "SKIP: No product batches found for transfer test.\n";
+    }
+} else {
+    echo "SKIP: Only 1 branch exists.\n";
 }
-
 // 3. Test Batch Adjustment
 echo "Testing Batch Updates...\n";
 $db->query("UPDATE product_batches SET stock_qty = stock_qty + 10 WHERE id = 1");

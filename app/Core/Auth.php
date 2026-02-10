@@ -10,7 +10,9 @@ class Auth
             session_start();
         }
         
-        session_regenerate_id(true); // Prevent session fixation
+        if (!headers_sent()) {
+            session_regenerate_id(true); // Prevent session fixation
+        }
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
         $_SESSION['role_id'] = $user['role_id'];
@@ -54,7 +56,9 @@ class Auth
         if (session_status() === PHP_SESSION_NONE) {
             session_start();
         }
-        session_regenerate_id(true);
+        if (!headers_sent()) {
+            session_regenerate_id(true);
+        }
         $_SESSION['vendor_id'] = $vendor['id'];
         $_SESSION['vendor_name'] = $vendor['name'];
         $_SESSION['vendor_email'] = $vendor['email'];
@@ -143,5 +147,29 @@ class Auth
             session_start();
         }
         return $_SESSION['branch_name'] ?? 'Main Branch';
+    }
+
+    // --- CSRF Protection ---
+
+    public static function generateCsrfToken(): string
+    {
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+        if (empty($_SESSION['csrf_token'])) {
+            $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+        }
+        return $_SESSION['csrf_token'];
+    }
+
+    public static function verifyCsrfToken(?string $token): bool
+    {
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+        if (empty($_SESSION['csrf_token']) || empty($token)) {
+            return false;
+        }
+        return hash_equals($_SESSION['csrf_token'], $token);
     }
 }

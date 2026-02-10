@@ -12,6 +12,7 @@
     <?php endif; ?>
 
     <form action="/login" method="POST">
+        <input type="hidden" name="csrf_token" value="<?= \App\Core\Auth::generateCsrfToken() ?>">
         <div class="form-group">
             <label>Operator ID</label>
             <input type="text" name="username" required autofocus placeholder="admin" autocomplete="off">

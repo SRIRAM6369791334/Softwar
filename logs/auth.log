@@ -1,0 +1,13 @@
+[AUTH] {"ts":"2026-02-10T06:38:02+01:00","event":"login_success","username":"admin","ip":"::1","context":{"user_id":1}}
+[AUTH] {"ts":"2026-02-10T08:35:05+01:00","event":"login_success","username":"admin","ip":"::1","context":{"user_id":1}}
+[AUTH] {"ts":"2026-02-10T12:14:04+01:00","event":"login_failed_unknown_user","username":"supplier@example.com","ip":"::1","context":[]}
+[AUTH] {"ts":"2026-02-10T12:23:45+01:00","event":"login_failed","username":"admin","ip":"::1","context":{"user_id":1,"attempts":1}}
+[AUTH] {"ts":"2026-02-10T12:25:18+01:00","event":"login_failed","username":"admin","ip":"::1","context":{"user_id":1,"attempts":2}}
+[AUTH] {"ts":"2026-02-10T12:25:52+01:00","event":"login_failed","username":"admin","ip":"::1","context":{"user_id":1,"attempts":3}}
+[AUTH] {"ts":"2026-02-10T12:26:01+01:00","event":"login_failed","username":"admin","ip":"::1","context":{"user_id":1,"attempts":4}}
+[AUTH] {"ts":"2026-02-10T12:30:26+01:00","event":"login_failed","username":"admin","ip":"::1","context":{"user_id":1,"attempts":5}}
+[AUTH] {"ts":"2026-02-10T12:30:37+01:00","event":"login_blocked_locked_account","username":"admin","ip":"::1","context":{"user_id":1}}
+[AUTH] {"ts":"2026-02-10T12:37:51+01:00","event":"login_blocked_locked_account","username":"admin","ip":"::1","context":{"user_id":1}}
+[AUTH] {"ts":"2026-02-10T12:38:50+01:00","event":"login_blocked_locked_account","username":"admin","ip":"::1","context":{"user_id":1}}
+[AUTH] {"ts":"2026-02-10T12:40:24+01:00","event":"login_blocked_locked_account","username":"admin","ip":"::1","context":{"user_id":1}}
+[AUTH] {"ts":"2026-02-10T12:48:34+01:00","event":"login_blocked_locked_account","username":"admin","ip":"::1","context":{"user_id":1}}

@@ -61,8 +61,8 @@ class UserController extends Controller
             die("Error: Username already exists.");
         }
 
-        $email = $_POST['email'] ?? null;
-        $phone = $_POST['phone'] ?? null;
+        $email = !empty($_POST['email']) ? \App\Core\Security::encryptData($_POST['email']) : null;
+        $phone = !empty($_POST['phone']) ? \App\Core\Security::encryptData($_POST['phone']) : null;
 
         $sql = "INSERT INTO users (username, password_hash, role_id, branch_id, full_name, email, phone, status) VALUES (?, ?, ?, ?, ?, ?, ?, 'active')";
         $this->db->query($sql, [$username, $password, $role_id, $branch_id, $full_name, $email, $phone]);
@@ -76,5 +76,56 @@ class UserController extends Controller
         ]);
 
         $this->redirect('/users?success=Employee Created');
+    }
+
+    /**
+     * GDPR: Download My Data [#80]
+     */
+    public function downloadMyData()
+    {
+        $userId = \App\Core\Auth::id();
+        $user = $this->db->query("SELECT id, username, full_name, email, phone, role_id, created_at FROM users WHERE id = ?", [$userId])->fetch();
+        
+        $activity = $this->db->query("SELECT action, description, created_at FROM admin_actions WHERE user_id = ?", [$userId])->fetchAll();
+        $logins = $this->db->query("SELECT ip_address, user_agent, created_at FROM login_history WHERE user_id = ?", [$userId])->fetchAll();
+
+        $export = [
+            'profile' => $user,
+            'activity_logs' => $activity,
+            'login_history' => $logins,
+            'exported_at' => date('Y-m-d H:i:s')
+        ];
+
+        header('Content-Type: application/json');
+        header('Content-Disposition: attachment; filename="my_data_export.json"');
+        echo json_encode($export, JSON_PRETTY_PRINT);
+        exit;
+    }
+
+    /**
+     * GDPR: Right to be Forgotten [#81]
+     */
+    public function requestDeletion()
+    {
+        $userId = \App\Core\Auth::id();
+        
+        // 1. ANONYMIZE DATA (Scrub PII but keep records for financial integrity)
+        $this->db->query(
+            "UPDATE users SET 
+                full_name = 'Anonymized User', 
+                email = NULL, 
+                phone = NULL,
+                status = 'inactive',
+                requested_deletion_at = NOW()
+             WHERE id = ?",
+            [$userId]
+        );
+
+        // 2. LOG THE ACTION
+        (new \App\Core\ActivityMonitor())->logAdminAction($userId, 'GDPR_FORGET_ME', 'USER', "User requested account anonymization/deletion");
+
+        // 3. LOG OUT
+        \App\Core\SessionManager::destroy();
+        $this->redirect('/login?info=Your data has been anonymized and account deactivated.');
     }
 }

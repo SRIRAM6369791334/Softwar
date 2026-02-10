@@ -97,10 +97,16 @@ class ReportsController extends Controller
             [$monthStart, $branchId]
         )->fetch();
         
+        // Optimized Low Stock Query (Using Join instead of Correlated Subquery)
         $lowStock = $this->db->query("
-            SELECT COUNT(*) as count FROM products p
-            WHERE p.branch_id = ?
-            AND (SELECT COALESCE(SUM(stock_qty), 0) FROM product_batches WHERE product_id = p.id AND branch_id = ?) < p.min_stock_alert
+            SELECT COUNT(*) as count FROM (
+                SELECT p.id
+                FROM products p
+                LEFT JOIN product_batches pb ON p.id = pb.product_id AND pb.branch_id = ?
+                WHERE p.branch_id = ? AND p.is_active = 1 AND p.deleted_at IS NULL
+                GROUP BY p.id, p.min_stock_alert
+                HAVING COALESCE(SUM(pb.stock_qty), 0) < p.min_stock_alert
+            ) as low_stock_list
         ", [$branchId, $branchId])->fetch();
 
         return $this->view('reports/dashboard', [
@@ -118,8 +124,8 @@ class ReportsController extends Controller
         $startDate = $_GET['start'] ?? date('Y-m-01'); // Default to month start
         $endDate = $_GET['end'] ?? date('Y-m-d');
 
-        // Top Selling Products by Revenue
-        $topSellers = $this->db->query("
+        // Top Selling Products by Revenue (Cached for request duration)
+        $topSellers = $this->db->cachedQuery("
             SELECT 
                 p.name, 
                 p.sku,
@@ -132,7 +138,7 @@ class ReportsController extends Controller
             GROUP BY p.id
             ORDER BY total_revenue DESC
             LIMIT 20
-        ", [$startDate, $endDate, $branchId])->fetchAll();
+        ", [$startDate, $endDate, $branchId]);
 
         // Slow Moving / Dead Stock (within current branch)
         $slowMovers = $this->db->query("
@@ -308,22 +314,30 @@ class ReportsController extends Controller
 
         if ($type === 'hsn') {
             fputcsv($output, ['HSN Code', 'Unit', 'Total Quantity', 'Total Value', 'Taxable Value', 'Tax Rate (%)', 'Tax Amount']);
-            $data = $this->db->query("
+            $stmt = $this->db->query("
                 SELECT p.hsn_code, p.unit, SUM(ii.qty), SUM(ii.total), SUM(ii.qty * ii.unit_price), ii.tax_percent, SUM(ii.tax_amount)
                 FROM invoice_items ii JOIN products p ON ii.product_id = p.id JOIN invoices i ON ii.invoice_id = i.id
                 WHERE i.branch_id = ? AND i.status = 'paid' AND MONTH(i.created_at) = ? AND YEAR(i.created_at) = ?
                 GROUP BY p.hsn_code, ii.tax_percent, p.unit
-            ", [$branch_id, $month, $year])->fetchAll(\PDO::FETCH_ASSOC);
-            foreach ($data as $row) fputcsv($output, array_values($row));
+            ", [$branch_id, $month, $year]);
+            
+            while ($row = $stmt->fetch(\PDO::FETCH_ASSOC)) {
+                fputcsv($output, array_values($row));
+                ob_flush(); flush(); // Phase 8: Memory efficient streaming [#41]
+            }
         } else {
             fputcsv($output, ['Tax Rate (%)', 'Taxable Value', 'CGST', 'SGST', 'Total Tax']);
-            $data = $this->db->query("
+            $stmt = $this->db->query("
                 SELECT tax_percent, SUM(qty * unit_price), SUM(tax_amount)/2, SUM(tax_amount)/2, SUM(tax_amount)
                 FROM invoice_items ii JOIN invoices i ON ii.invoice_id = i.id
                 WHERE i.branch_id = ? AND i.status = 'paid' AND MONTH(i.created_at) = ? AND YEAR(i.created_at) = ?
                 GROUP BY tax_percent
-            ", [$branch_id, $month, $year])->fetchAll(\PDO::FETCH_ASSOC);
-            foreach ($data as $row) fputcsv($output, array_values($row));
+            ", [$branch_id, $month, $year]);
+            
+            while ($row = $stmt->fetch(\PDO::FETCH_ASSOC)) {
+                fputcsv($output, array_values($row));
+                ob_flush(); flush();
+            }
         }
         fclose($output);
         exit;

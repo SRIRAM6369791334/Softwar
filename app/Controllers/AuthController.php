@@ -118,8 +118,16 @@ class AuthController extends Controller
             if ($daysSinceChange > $expiryDays) {
                 $_SESSION['password_expired'] = true;
             }
+            $this->logAuthEvent('login_success_step1', $username, ['user_id' => $user['id']]);
 
-            $this->logAuthEvent('login_success', $username, ['user_id' => $user['id']]);
+            // Phase 2: Handle 2FA if enabled
+            if ($user['two_factor_enabled']) {
+                $_SESSION['2fa_user_id'] = $user['id'];
+                $_SESSION['2fa_pending'] = true;
+                $this->redirect('/auth/2fa/challenge');
+            }
+
+            Auth::login($user);
             $this->redirect('/dashboard');
         }
 
@@ -283,5 +291,78 @@ class AuthController extends Controller
         $this->logAuthEvent('biometric_login_success', (string) ($user['username'] ?? 'biometric'), ['user_id' => $user['id']]);
 
         $this->json(['success' => true, 'redirect' => '/dashboard']);
+    }
+
+    // --- Two-Factor Authentication (2FA) ---
+
+    public function setupTwoFactor()
+    {
+        $this->ensureSessionStarted();
+        if (!Auth::check()) { $this->redirect('/login'); }
+        
+        $user = Auth::user();
+        $tfa = new \App\Core\TwoFactorAuth();
+        $secret = $tfa->generateSecret();
+        $qrCodeUrl = $tfa->getQRCodeUrl($user['username'], $secret);
+        $backupCodes = $tfa->generateBackupCodes(8);
+
+        return $this->view('auth/2fa_setup', [
+            'user' => $user,
+            'secret' => $secret,
+            'qrCodeUrl' => $qrCodeUrl,
+            'backupCodes' => $backupCodes
+        ], 'dashboard');
+    }
+
+    public function verifyTwoFactorEnrollment()
+    {
+        $this->ensureSessionStarted();
+        $request = new Request();
+        $body = $request->getBody();
+        
+        $code = $body['code'] ?? '';
+        $secret = $body['secret'] ?? '';
+        
+        $tfa = new \App\Core\TwoFactorAuth();
+        if ($tfa->verifyCode($secret, $code)) {
+            $db = Database::getInstance();
+            $db->query(
+                "UPDATE users SET two_factor_secret = ?, two_factor_enabled = 1 WHERE id = ?",
+                [$secret, Auth::id()]
+            );
+            $this->redirect('/dashboard');
+        }
+
+        $this->redirect('/auth/2fa/setup');
+    }
+
+    public function twoFactorChallenge()
+    {
+        $this->ensureSessionStarted();
+        if (!isset($_SESSION['2fa_pending'])) { $this->redirect('/login'); }
+        return $this->view('auth/2fa_challenge', [], 'auth');
+    }
+
+    public function verifyTwoFactorLogin()
+    {
+        $this->ensureSessionStarted();
+        if (!isset($_SESSION['2fa_pending'])) { $this->redirect('/login'); }
+
+        $request = new Request();
+        $body = $request->getBody();
+        $code = $body['code'] ?? '';
+        $userId = $_SESSION['2fa_user_id'];
+
+        $db = Database::getInstance();
+        $user = $db->query("SELECT * FROM users WHERE id = ?", [$userId])->fetch();
+
+        $tfa = new \App\Core\TwoFactorAuth();
+        if ($tfa->verifyCode($user['two_factor_secret'], $code) || $tfa->verifyBackupCode($userId, $code)) {
+            unset($_SESSION['2fa_pending'], $_SESSION['2fa_user_id']);
+            Auth::login($user);
+            $this->redirect('/dashboard');
+        }
+
+        return $this->view('auth/2fa_challenge', ['error' => 'Invalid code.'], 'auth');
     }
 }

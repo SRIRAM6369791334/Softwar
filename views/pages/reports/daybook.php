@@ -15,15 +15,15 @@
     </div>
     <div class="card" style="text-align: center;">
         <div style="color: #888; font-size: 0.8rem;">Total Sales</div>
-        <div style="font-size: 2rem; color: var(--success); font-weight: bold;">₹<?= number_format($totals['total_sales'] ?? 0, 2) ?></div>
+        <div style="font-size: 2rem; color: var(--success); font-weight: bold;"><?= \App\Core\Currency::format($totals['total_sales'] ?? 0) ?></div>
     </div>
     <div class="card" style="text-align: center;">
         <div style="color: #888; font-size: 0.8rem;">Tax Collected</div>
-        <div style="font-size: 1.5rem; font-weight: bold;">₹<?= number_format($totals['total_tax'] ?? 0, 2) ?></div>
+        <div style="font-size: 1.5rem; font-weight: bold;"><?= \App\Core\Currency::format($totals['total_tax'] ?? 0) ?></div>
     </div>
     <div class="card" style="text-align: center;">
         <div style="color: #888; font-size: 0.8rem;">Discounts</div>
-        <div style="font-size: 1.5rem; color: #d29922; font-weight: bold;">₹<?= number_format($totals['total_discount'] ?? 0, 2) ?></div>
+        <div style="font-size: 1.5rem; color: #d29922; font-weight: bold;"><?= \App\Core\Currency::format($totals['total_discount'] ?? 0) ?></div>
     </div>
 </div>
 
@@ -46,7 +46,7 @@
                 <td style="font-family: monospace; color: var(--accent-color);"><?= $inv['invoice_no'] ?></td>
                 <td><?= date('h:i A', strtotime($inv['created_at'])) ?></td>
                 <td><?= $inv['cashier_name'] ?></td>
-                <td style="font-weight: bold;">₹<?= number_format($inv['grand_total'], 2) ?></td>
+                <td style="font-weight: bold;"><?= \App\Core\Currency::format($inv['grand_total']) ?></td>
                 <td>
                     <span style="padding: 2px 8px; background: <?= $inv['status'] == 'paid' ? 'var(--success)' : '#999' ?>; border-radius: 3px; font-size: 0.75rem;">
                         <?= strtoupper($inv['status']) ?>
